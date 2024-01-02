@@ -176,7 +176,8 @@ public class MainModule {
         } catch(Exception e) {
             e.printStackTrace(); // Handle the exception appropriately
         }
-    }
+        scanner.close();
+       }
 
     private static void cancelAppointment() throws SQLException {
         Scanner scanner = new Scanner(System.in);
